@@ -1,0 +1,121 @@
+#header {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(26, 83, 187);
+}
+
+#container {
+  background-color: lightblue;
+  margin: auto;
+  text-align: center;
+}
+
+#header h1 {
+  color: white;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  width: 33.33%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+#picture img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 200px;
+}
+
+#picture p {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.about {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about1 {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  border-style: outset;
+  border-color: skyblue;
+}
+
+.about2 {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  border-style: outset;
+  border-color: skyblue;
+}
+
+.about3 {
+  float: left;
+  width: 31%;
+  text-align: center;
+  border-style: outset;
+  border-color: skyblue;
+}
+
+.work1 {
+  float: left;
+  width: 33%;
+  border-style: outset;
+  border-color: skyblue;
+}
+
+.work2 {
+  float: left;
+  width: 33%;
+  border-style: outset;
+  border-color: skyblue;
+}
+
+.work3 {
+  float: left;
+  width: 31%;
+  border-style: outset;
+  border-color: skyblue;
+}
+
+.work h3 {
+  clear: both;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.work ul {
+  text-align: center;
+  list-style-position: inside;
+  color: darkblue;
+  font-style: italic;
+  list-style: circle;
+}
+
+.footer {
+  clear: both;
+  background-color: rgb(26, 83, 187);
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+}
