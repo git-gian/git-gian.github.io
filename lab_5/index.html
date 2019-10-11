@@ -303,17 +303,19 @@
         const instructions = document.querySelector(".instructions");
         instructions.innerHTML = ""; //clears the instructions
 
-        const temp = [];
-        
+        const temp = []; //the array of all the used elements
+
         for (let i = 0; i < 50; i++) {
-          const selectNumber = getRandomIntInclusive(0, 242 - i); 
+          const selectNumber = getRandomIntInclusive(0, 242 - i); //every time the loop increments, decrease the max number of countries
+          //because once an element is removed, the list gets smaller
+          //i.e. no duplicates
+
           let el = document.createElement("li");
           el.innerText = nameArray[selectNumber];
           instructions.appendChild(el);
 
-          nameArray.splice(selectNumber, 1);
-          temp.push(nameArray[selectNumber]);
-
+          const removed = nameArray.splice(selectNumber, 1); //put the removed element into an array of 1
+          temp.push(removed[0]); //add the removed element to the temp array.
         }
       }
     </script>
