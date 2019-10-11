@@ -303,12 +303,17 @@
         const instructions = document.querySelector(".instructions");
         instructions.innerHTML = ""; //clears the instructions
 
+        const temp = [];
+        
         for (let i = 0; i < 50; i++) {
-          const selectNumber = getRandomIntInclusive(0, 242);
+          const selectNumber = getRandomIntInclusive(0, 242 - i); 
           let el = document.createElement("li");
           el.innerText = nameArray[selectNumber];
-
           instructions.appendChild(el);
+
+          nameArray.splice(selectNumber, 1);
+          temp.push(nameArray[selectNumber]);
+
         }
       }
     </script>

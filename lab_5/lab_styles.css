@@ -63,8 +63,8 @@ h3 {
 }
 
 .instructions {
-  padding: 0 25px;
-  list-style: disc;
+  padding: 0, 25px;
+  list-style-type: decimal;
 }
 
 .content {
