@@ -30,7 +30,9 @@
         })
         .then(res => res.result.map(c => c))
         .then(codes => {
-          
+
+          console.log(codes);
+
           const list = document.querySelector(".list");
           list.innerHTML = "";
 

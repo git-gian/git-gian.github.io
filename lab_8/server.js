@@ -50,6 +50,7 @@ app.get('/api', (req, res) => {
 
       const result = data.filter((d) => d.dept_id === 'INST');
 
+      console.log(result);
       res.send({ result: result });
     })
     .catch((err) => {
